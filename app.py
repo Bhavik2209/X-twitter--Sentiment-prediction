@@ -6,6 +6,7 @@ from nltk.stem import PorterStemmer, WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 stemming = PorterStemmer()
 nltk.download('punkt')
+nltk.download('wordnet')
 nltk.download('stopwords')
 stopwords.words('english')
 
