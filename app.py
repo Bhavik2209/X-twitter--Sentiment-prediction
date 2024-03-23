@@ -5,6 +5,9 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 stemming = PorterStemmer()
+nltk.download('punkt')
+nltk.download('stopwords')
+stopwords.words('english')
 
 
 with open('model.pkl', 'rb') as model_file:
