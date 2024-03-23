@@ -7,11 +7,11 @@ lemmatizer = WordNetLemmatizer()
 stemming = PorterStemmer()
 
 
-with open(r'C:\Users\SVI\Desktop\twitter-sentiment\model.pkl', 'rb') as model_file:
+with open('model.pkl', 'rb') as model_file:
     loaded_lr = pickle.load(model_file)
 
 
-with open(r'C:\Users\SVI\Desktop\twitter-sentiment\vector.pkl', 'rb') as file:
+with open('vector.pkl', 'rb') as file:
     loaded_cv = pickle.load(file)
 
 # Function to preprocess input text
